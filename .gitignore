@@ -1,0 +1,21 @@
+cat > .gitignore << 'EOF'
+# Secret keys - NEVER push this
+.env
+
+# Virtual environments
+venv/
+venv-wsl/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Uploaded files (user data)
+uploads/*
+!uploads/.gitkeep
+
+# OS files
+.DS_Store
+Thumbs.db
+EOF
